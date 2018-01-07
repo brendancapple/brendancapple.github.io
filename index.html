@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 	<title>SN First</title>
-	<h1>
-		SN First
-	</h1>
+	
+	<div id="separate">
+	
+		<h1 id="header">
+			SN First
+		</h1>
+		
+		
+		<div id="other"><a href="chat.php"><img width="50" height="50" src="https://vignette.wikia.nocookie.net/titanfall/images/3/3a/Icon_Chat.png/revision/latest?cb=20140504182858" alt="Chat"></img></a></div>	
+		
+	</div>
 	<hr></hr>
 	<div>
 		<p>
@@ -24,13 +32,27 @@
 			</div>
 			
 			<div id="social4">
-				<a href="<a href="https://github.com/brendancapple/brendancapple.github.io"><img width="50" height="50" src="https://rcloud.social/images/Octocat.png" alt="This Repository"></img></a>
+				<a href="https://github.com/brendancapple/brendancapple.github.io"><img width="50" height="50" src="https://rcloud.social/images/Octocat.png" alt="This Repository"></img></a>
 			</div>
 		</div>
 	</div>
 	
 	 
 	 <style>
+	 
+		#separate{
+			display: flex;
+		}
+		
+		#other{
+			display: inline-block;
+			position: absolute;
+			left: 95%;
+		}
+		#header{
+			display: inline-block;
+		}
+		
 		.social{
 			display: flex;
 		}
