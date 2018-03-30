@@ -8,7 +8,7 @@
 		</h1>
 		
 		
-		<div id="other"><a href="game.html"><img width="50" height="50" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-3d-buttons-icons-sports-hobbies/044196-glossy-black-3d-button-icon-sports-hobbies-brush57.png" alt="Chat"></img></a></div>	
+		<div class="other"><a href="game.html"><img width="50" height="50" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-3d-buttons-icons-sports-hobbies/044196-glossy-black-3d-button-icon-sports-hobbies-brush57.png" alt="Chat"></img></a></div>	
 		
 	</div>
 	<hr></hr>
@@ -17,7 +17,9 @@
 			Come here to see all the new Soul Ninja content.
 		</p>
 		<hr></hr>
-			<a href="Fortnite.html"><img src="fortnite.png" alt="Fortnite Playlist" width="300" height="160"></alt></a>
+			<div class="social">
+				<a href="Fortnite.html"><img class="playlist" src="fortnite.png" alt="Fortnite Playlist" width="300" height="160"></alt></a>
+			</div>
 		<hr></hr>
 		<iframe width="854" height="480" src="https://www.youtube.com/embed/EIzFlCGhxlc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<hr></hr>
@@ -42,12 +44,16 @@
 	
 	 
 	 <style>
-	 
+		
+		#playlist{
+			display: inline-block;
+		}
+		
 		#separate{
 			display: flex;
 		}
 		
-		#other{
+		.other{
 			display: inline-block;
 			position: absolute;
 			left: 95%;
@@ -58,6 +64,8 @@
 		
 		.social{
 			display: flex;
+			overflow-x: scroll;
+			overflow-y: hidden;
 		}
 		
 		#social1{
